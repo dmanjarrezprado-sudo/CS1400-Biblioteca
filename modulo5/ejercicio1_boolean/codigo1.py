@@ -7,6 +7,7 @@ es_finde = False
 
 # TODO 1: Usa una expresión booleana con "and"
 # Por ejemplo: ¿Puede salir hoy solo si tiene 18 años o más Y si tiene permiso?
+print("")
 
 
 
