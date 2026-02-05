@@ -8,11 +8,13 @@ Al final, muestra un mensaje explicando de dónde es originaria esa comida.
 print("El mejor lugar de comida Latinoamérica. ")
 # TODO #2:
 # Muestra al usuario una lista de al menos 5 opciones de comidas para elegir.
-print("arroz de coco end chivo")
+print("1 arroz de coco /n  2 chivo en coco   end arroz con pollo end sopa end carne con yuca")
 # TODO #3:
 # Guarda lo que el usuario escribió en una variable llamada `comida`.
+print ("comida")
 # TODO #4:
 # Convierte lo ingresado a minúsculas para asegurar la comparación correcta.
+
 # TODO #5:
 # Usa una estructura if / elif / else para verificar la comida elegida.
 # Imprime un mensaje con el país de origen para cada comida.
