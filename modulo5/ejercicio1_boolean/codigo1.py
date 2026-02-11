@@ -10,7 +10,8 @@ es_finde = False
 edad = input("cuantos años tienes")
 edad = int(edad)
 print("¿Puede salir hoy solo si tiene 18 años o más Y si tiene permiso?")
-puede_salir_ = (edad >= 18) and tiene_permiso
+puede_salir = (edad >= 18) and tiene_permiso
+
 print("puede salir")
 
 
