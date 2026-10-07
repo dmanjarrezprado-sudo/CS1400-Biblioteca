@@ -1,4 +1,7 @@
 """ TODO 1 agregar tu nombre fecha titulo de una manera bonita """
+#Proyecto tortuga
+#delside Manjarrez
+#10/06/2026
 
 
 # Importamos la biblioteca turtle (ya viene incluida en Python)
@@ -6,8 +9,8 @@ import turtle
 
 # Configuración de la pantalla y la tortuga
 pantalla = turtle.Screen() # # Usamos sintaxis de punto . para acceder a la función Screen()
-pantalla.bgcolor("lightcyan")  # TODO 2 Cambia el color de fondo usando la función bgcolor()
-pantalla.title("Titulo") #TODO 3 Asigna un título a la ventana usando title()
+pantalla.bgcolor("red")  # TODO 2 Cambia el color de fondo usando la función bgcolor()
+pantalla.title("Dibujo de una casa") #TODO 3 Asigna un título a la ventana usando title()
 
 # Corre el programa hasta este punto utilizando """ """ o # para asegurar que funcione bien.
 
