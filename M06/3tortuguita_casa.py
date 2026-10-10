@@ -31,6 +31,10 @@ import turtle
 #  Iniciar ventana y objeto de tortuga y agregar el speed o velocidad. Pista: Mira la Tarea 1turtle.py
 
 # Escribe aquí tu código
+pantalla = turtle.Screen()
+pantalla.setup(400, 400)
+t= turtle.Turtle()
+t.speed(3)
 
 # TODO 2
 #  Crea la tortuga usando make_turtle().
