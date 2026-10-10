@@ -79,17 +79,25 @@ dibujar_figura(lados=5, tamaño=60, color_borde="purple", color_relleno="plum")
 mover(150, 0)
 dibujar_figura(lados=6, tamaño=50, color_borde="darkblue", color_relleno="skyblue")
 
+# Dibujar un octágono (8 lados)
+mover(0, -150)
+for _ in range(1):
+    dibujar_figura(lados=8,
+                    tamaño=40,
+                      color_borde="orange",
+                        color_relleno="yellow")
+# si le quitaba el dibujar figura no me corria el programa.lo intente 
 
 # ==================================================================
 # 4. PREGUNTAS
 # ==================================================================
 """
 1.  ¿Cuantas funciones hay en este programa? Que proposito tienen? En tus propias palabras agrega comentario completo.
-logro ver dos funciones la primera dibuja una figura y la sengunda mueve a la tortula a un lugar senalado en la pantalla.
+#logro ver dos funciones la primera dibuja una figura y la sengunda mueve a la tortula a un lugar senalado en la pantalla.
 2. ¿Qué parámetro de la función 'dibujar_figura' tendrías que cambiar para hacer un octágono (8 lados)?
-
+#se debe cambiar el parametro lados a 8.
 3 ¿En que numero de linea termina la funcion mover?
-
+#en la linea 63 termina la funcion mover.
 4. Bajo la seccion de pruebas, intenta hacer una nueva figura sin el uso de la funcion dibujar_figura.
 
 5. Guarda una captura de pantalla con las 4 figuras en la carpeta M06.
