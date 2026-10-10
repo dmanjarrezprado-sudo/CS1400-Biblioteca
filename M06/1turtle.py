@@ -23,6 +23,7 @@ t.speed(3)         # Velocidad del dibujo (1 es lento, 10 es rápido)
 
 # =============================================================
 # EJEMPLO: Dibujar la base de la casa (un cuadrado azul)
+
 # =============================================================
 
 t.color("darkblue", "lightblue")  # (Color del borde, Color de relleno - los puedes ajustar si deseas - TODO 5 los colores son parametros o argumentos?)

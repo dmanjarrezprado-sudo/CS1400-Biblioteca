@@ -2,7 +2,7 @@
 ====================================================================
 Mi Primera Función en Turtle
 ====================================================================
-NOMBRE: 
+NOMBRE: Delside Manjarrez
 Objetivo:
 Entender cómo encapsular código en una función para reutilizarlo y 
 dibujar figuras personalizadas de manera sencilla.
@@ -85,7 +85,7 @@ dibujar_figura(lados=6, tamaño=50, color_borde="darkblue", color_relleno="skybl
 # ==================================================================
 """
 1.  ¿Cuantas funciones hay en este programa? Que proposito tienen? En tus propias palabras agrega comentario completo.
-
+logro ver dos funciones la primera dibuja una figura y la sengunda mueve a la tortula a un lugar senalado en la pantalla.
 2. ¿Qué parámetro de la función 'dibujar_figura' tendrías que cambiar para hacer un octágono (8 lados)?
 
 3 ¿En que numero de linea termina la funcion mover?
