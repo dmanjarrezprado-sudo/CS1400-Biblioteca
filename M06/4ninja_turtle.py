@@ -41,7 +41,33 @@ def dibujar_triangulo(t, longitud, angulo, color_relleno="orange"):
     - angulo: El ángulo en el vértice central (en grados).
     - color_relleno: El color con el que se pintará la porción.
     """
+
+
+
+# configurar el color y comenzar el relleno
+    t.color("darkred", color_relleno)
+    t.begin_fill()
+
+    # 1. Avanzar el primer lado (radio de la pizza)
+    t.forward(longitud)
     
+    # 2. Girar para dibujar la corteza (borde exterior)
+    t.left(90 + angulo / 2)
+    
+    # Calcular la longitud de la base usando la fórmula matemática
+    base = 2 * longitud * math.sin(math.radians(angulo / 2))
+    t.forward(base)
+    
+    # 3. Girar para regresar al centro
+    t.left(90 + angulo / 2)
+    t.forward(longitud)
+    
+    # 4. Dar la vuelta para quedar mirando en la dirección de la siguiente rebanada
+    t.left(180)
+    
+    # Terminar el relleno de color
+    t.end_fill()
+
     # --------------------------------------------------------------
     # Paso A: Cálculos Matemáticos (Geometría del Triángulo)
     # --------------------------------------------------------------
@@ -51,13 +77,16 @@ def dibujar_triangulo(t, longitud, angulo, color_relleno="orange"):
     
     # TODO 2: Calcula la longitud de la base del triángulo isósceles.
     # FÓRMULA: base = 2 * longitud * sin(angulo / 2)
-    
+    base = 2 * longitud * math.sin(math.radians(angulo / 2))
+
     
     # TODO 3: Calcula el ángulo de giro exterior para la tortuga en las esquinas.
     # Pista: La suma de ángulos internos de un triángulo es 180°.
     # El ángulo en la base es: (180 - angulo) / 2.
     # El giro exterior es: 180 - ángulo_base  =>  90 + (angulo / 2)
     
+    angulo_giro_base = 90 + (angulo / 2)
+
 
     # --------------------------------------------------------------
     # Paso B: Dibujo del Triángulo Isósceles
@@ -73,8 +102,12 @@ def dibujar_triangulo(t, longitud, angulo, color_relleno="orange"):
     # 5. Avanza 'longitud' (Lado 2 para regresar al centro)
     # 6. Gira 180° para quedar orientado en dirección opuesta
     
+   
     t.forward(longitud)
-    # tu codigo faltante aqui
+    t.left(angulo_giro_base)   
+    t.forward(base)
+    t.left(angulo_giro_base)
+    t.forward(longitud)
     t.left(180)  # Reorientar hacia afuera para la siguiente porción
     
     t.end_fill()
