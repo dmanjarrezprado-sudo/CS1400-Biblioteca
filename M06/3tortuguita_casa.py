@@ -41,6 +41,8 @@ t.speed(3)
 #  La ventana debe tener 400 de alto y 400 de ancho.
 
 # Escribe aquí tu código
+pantalla.setup(400, 400)
+t= turtle.Turtle()
 
 # Captura de Pantalla, nombralo "TUNOMBRE_1_2" y guardalo en la carpeta M06
 
@@ -53,7 +55,7 @@ t.speed(3)
 # Observa qué sucede.
 
 # Escribe aquí tu código
-
+t.forward(100)
 
 # ------------------------------------------
 # Girar la tortuga
@@ -64,6 +66,8 @@ t.speed(3)
 # Luego avanza otros 100 pasos.
 
 # Escribe aquí tu código
+t.left(90)
+t.forward(100)
 
 
 # ------------------------------------------
@@ -72,6 +76,9 @@ t.speed(3)
 # Un cuadrado tiene:
 # - 4 lados
 # - 4 giros de 90 grados
+for _ in range(4):
+    t.forward(100)  # 
+    t.left(90)      # 
 
 print("Dibujando un cuadrado...")
 
@@ -82,6 +89,9 @@ print("Dibujando un cuadrado...")
 # La tortuga debe terminar donde empezó.
 
 # Escribe aquí tu código
+for _ in range(4):
+    t.forward(100)
+    t.left(90)  
 
 
 # ------------------------------------------
@@ -94,6 +104,17 @@ print("Dibujando un cuadrado...")
 # - Un giro completo es 360 grados.
 # - ¿Cuánto debe girar en cada esquina?
 
+#dibuja el techo (triangulo)
+for _ in range(3):
+    t.forward(100)
+    t.left(120)  # Cada ángulo interno de un triángulo equilátero es de 60 grados, por lo que el giro externo es de 120 grados.  
 
+# dibuja el rectangulo (cuerpo de la casa)
+for _ in range(2):
+    t.forward(30)  # Lado largo del rectángulo
+    t.left(90)
+    t.forward(50)   # Lado corto del rectángulo
+    t.left(90)
+# lo intente,pero me salio mal.
 # Mantiene la ventana abierta hasta que hagas clic en ella
 pantalla.exitonclick()
