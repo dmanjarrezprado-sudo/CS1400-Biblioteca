@@ -110,8 +110,10 @@ def dibujar_triangulo(t, longitud, angulo, color_relleno="orange"):
     t.forward(longitud)
     t.left(180)  # Reorientar hacia afuera para la siguiente porción
     
-    t.end_fill()
 
+
+
+def dibujar_tarta(t, n_porciones, longitud, color_relleno="orange"):
 
 # TODO 5: Función que reutiliza 'dibujar_triangulo' para construir la tarta completa. 
 # Parametros incluyen porciones, longitud, y el color del relleno.
@@ -122,15 +124,23 @@ def dibujar_triangulo(t, longitud, angulo, color_relleno="orange"):
     """
     
     # TODO 6: Calcula el ángulo central de cada porción (360° / n_porciones)
+    angulo_central = 360 / n_porciones
 
     
     # TODO 7: Usa un bucle 'for' para dibujar todas las porciones llamando la funcion dibujar_triangulo
 
+    for _ in range(n_porciones):
+        dibujar_triangulo(t, longitud, angulo_central, color_relleno)
 
 # TODO 8 (EXTRA/OPCIONAL): Función auxiliar para mover la tortuga sin dejar rastro
-# def mover_tortuga(t, x, y):
-    """Mueve la tortuga a las coordenadas (x, y) sin dibujar."""
-    # Investigar .penup .goto y .pendown
+def mover_tortuga(t, x, y):
+  t.penup()
+  t.goto(x, y)        
+  t.pendown()
+
+"""Mueve la tortuga a las coordenadas (x, y) sin dibujar."""
+# Investigar .penup .goto y .pendown
+
 
 
 # ==================================================================
@@ -138,12 +148,21 @@ def dibujar_triangulo(t, longitud, angulo, color_relleno="orange"):
 # ==================================================================
 # ¡Mira qué fácil es dibujar varias tartas completas en diferentes 
 # posiciones, con distintos números de porciones, tamaños y colores!
-# TODO 9: aqui deben ir tus instrucciones para dibujar.
+# TODO 9: aquí deben ir tus instrucciones para dibujar.
 
 # --- Tarta 1: Tarta clásica de 6 porciones ---
+mover_tortuga(t, -150, 0)
+dibujar_tarta(t, 6, 80, "orange")
 
 # --- Tarta 2: Tarta grande de 12 porciones ---
+mover_tortuga(t, 50, 100)
+dibujar_tarta(t, 12, 100, "yellow")
 
 # --- Tarta 3: Tarta pequeña (o pizza) de 4 porciones ---
+mover_tortuga(t, 100, -100)
+dibujar_tarta(t, 4, 60, "red")
 
 # TODO 10: Finalizar ejecución al hacer clic
+pantalla.exitonclick()
+
+
