@@ -14,7 +14,7 @@ Salida clara: Muestra un mensaje personalizado indicando si la persona puede
  Piensa en situaciones cómicas o extremas de la vida real.
    ¿Qué imprudencia o descuido no le permitirías a tu abuela antes de subirse al auto?
      (Ejemplo: "¿Olvidó los lentes en la cocina?")
-"""
+
 # M04 Tarea de Sentencias: Programa de Licencia de Conducir
 
 print("--- EVALUADOR DE CONDICIONES PARA CONDUCIR ---")
